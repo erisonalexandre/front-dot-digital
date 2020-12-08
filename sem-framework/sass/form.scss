@@ -1,0 +1,104 @@
+.form {
+  background-image: url("../img/background_form.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__name {
+    grid-area: name;
+  }
+
+  &__email {
+    grid-area: email;
+  }
+
+  &__phone {
+    grid-area: phone;
+  }
+
+  &__message {
+    grid-area: message;
+  }
+
+  &__container {
+    display: block;
+  }
+
+  &__field {
+    display: flex;
+    background-color: $light-gray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    white-space: nowrap;
+    color: #333333;
+  }
+
+  &__input {
+    width: 100%;
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: $dark-gray;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px $light-gray inset !important;
+    }
+
+    &::placeholder {
+      color: #707070;
+    }
+  }
+
+  &__button {
+    grid-area: button;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      color: #333333;
+      width: 160px;
+      height: 60px;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 10px;
+      background-color: $white;
+      border: none;
+      transition: all 0.4s ease 0s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    &__container {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "name name"
+        "email phone"
+        "message message"
+        "button button";
+    }
+  }
+}

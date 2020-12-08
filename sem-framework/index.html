@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- Home -->
+    <section class="home">
+        <div class="home__top">
+            <h1 class="home__title">Lorem Ipsum</h1>
+            <p class="home__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <svg class="home__arrow" viewBox="0 0 103 147" xmlns="http://www.w3.org/2000/svg"
+                onclick="scrollToCarousel()">
+                <path
+                    d="M61.6969 107.488V0.761795H41.3332V107.488L0.605957 67.7082V95.8451L51.9999 146.298L102.424 95.8451V67.7082L61.6969 107.488Z" />
+            </svg>
+        </div>
+
+        <div class="home__slide" data-index-ativo="1">
+            <div class="home__item home__item--active" data-index="1"><img src="img/image_1.jpg" alt="Slide"></div>
+            <div class="home__item" data-index="2"><img src="img/image_2.jpg" alt="Slide"></div>
+            <div class="home__item" data-index="3"><img src="img/image_1.jpg" alt="Slide"></div>
+        </div>
+        <div class="home__dot-container">
+            <div class="home__dot home__dot--active" data-index="1" onclick="changeImageHome(this)"></div>
+            <div class="home__dot" data-index="2" onclick="changeImageHome(this)"></div>
+            <div class="home__dot" data-index="3" onclick="changeImageHome(this)"></div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Carousel -->
+    <section id="carousel" class="carousel container">
+
+        <div class="carousel__arrow carousel__arrow--left" onclick="moveCarousel(this, 'right')">
+            <svg viewBox="0 0 146 102" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M39.0713 61.1668L145.797 61.1668V40.8031L39.0713 40.8031L78.8511 0.0758667L50.7141 0.0758667L0.261754 51.4698L50.7141 101.894H78.8511L39.0713 61.1668Z" />
+            </svg>
+        </div>
+
+        <div class="carousel__display">
+            <div class="carousel__itens" data-show="3">
+                <div class="carousel__item">
+                    <div class="carousel__image">
+                        <img src="img/image_1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel__item">
+                    <div class="carousel__image">
+                        <img src="img/image_1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel__item">
+                    <div class="carousel__image">
+                        <img src="img/image_1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel__item">
+                    <div class="carousel__image">
+                        <img src="img/image_1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel__item">
+                    <div class="carousel__image">
+                        <img src="img/image_1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel__item">
+                    <div class="carousel__image">
+                        <img src="img/image_1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel__item">
+                    <div class="carousel__image">
+                        <img src="img/image_1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel__item">
+                    <div class="carousel__image">
+                        <img src="img/image_1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel__item">
+                    <div class="carousel__image">
+                        <img src="img/image_1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel__text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel__arrow carousel__arrow--right" onclick="moveCarousel(this, 'left')">
+            <svg viewBox="0 0 146 102" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M106.988 40.8031L0.26178 40.8031L0.26178 61.1668L106.988 61.1668L67.2082 101.894H95.3451L145.798 50.5001L95.3451 0.0758581H67.2082L106.988 40.8031Z" />
+            </svg>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- About -->
+    <section class="about">
+
+        <div class="about__container container">
+
+            <div class="about__image">
+                <img src="img/image_1.jpg" alt="">
+            </div>
+
+            <div class="about__text">
+                <h2>Lorem Ipsum</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                    accumsan lacus vel facilisis.
+                </p>
+                <p>
+                    <b>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis.
+                    </b>
+                </p>
+                <p>
+                    <i>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis.
+                    </i>
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                    accumsan lacus vel facilisis.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Accordion -->
+    <section class="accordion">
+
+        <div class="container">
+            <div class="accordion__container">
+                <div class="accordion__item">
+                    <div class="accordion__header" onclick="toggleAccordion(this)">
+                        <h3>Lorem ipsum</h3>
+                        <div>
+                            <svg class="accordion__arrow" viewBox="0 0 103 147" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M61.6969 107.488V0.761795H41.3332V107.488L0.605957 67.7082V95.8451L51.9999 146.298L102.424 95.8451V67.7082L61.6969 107.488Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        <div class="accordion__image">
+                            <img src="img/image_1.jpg">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__header" onclick="toggleAccordion(this)">
+                        <h3>Lorem ipsum</h3>
+                        <div>
+                            <svg class="accordion__arrow" viewBox="0 0 103 147" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M61.6969 107.488V0.761795H41.3332V107.488L0.605957 67.7082V95.8451L51.9999 146.298L102.424 95.8451V67.7082L61.6969 107.488Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        <div class="accordion__image">
+                            <img src="img/image_1.jpg">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="accordion__item">
+                    <div class="accordion__header" onclick="toggleAccordion(this)">
+                        <h3>Lorem ipsum</h3>
+                        <div>
+                            <svg class="accordion__arrow" viewBox="0 0 103 147" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M61.6969 107.488V0.761795H41.3332V107.488L0.605957 67.7082V95.8451L51.9999 146.298L102.424 95.8451V67.7082L61.6969 107.488Z" />
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="accordion__content">
+                        <div class="accordion__image">
+                            <img src="img/image_1.jpg">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__header" onclick="toggleAccordion(this)">
+                        <h3>Lorem ipsum</h3>
+                        <div>
+                            <svg class="accordion__arrow" viewBox="0 0 103 147" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M61.6969 107.488V0.761795H41.3332V107.488L0.605957 67.7082V95.8451L51.9999 146.298L102.424 95.8451V67.7082L61.6969 107.488Z" />
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="accordion__content">
+                        <div class="accordion__image">
+                            <img src="img/image_1.jpg">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__header" onclick="toggleAccordion(this)">
+                        <h3>Lorem ipsum</h3>
+                        <div>
+                            <svg class="accordion__arrow" viewBox="0 0 103 147" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M61.6969 107.488V0.761795H41.3332V107.488L0.605957 67.7082V95.8451L51.9999 146.298L102.424 95.8451V67.7082L61.6969 107.488Z" />
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="accordion__content">
+                        <div class="accordion__image">
+                            <img src="img/image_1.jpg">
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Form -->
+    <section class="form" onsubmit="submitForm(event)">
+
+        <div class="container">
+            <form action="#" class="form__container">
+                <div class="form__field form__name">
+                    <label class="form__label" for="form_name">*Nome:</label>
+                    <input class="form__input" id="form_name" name="name" type="text" placeholder="Informe seu nome"
+                        required>
+                </div>
+                <div class="form__field form__email">
+                    <label class="form__label" for="form_email">*E-mail:</label>
+                    <input class="form__input" id="form_email" name="email" type="email"
+                        placeholder="Informe seu e-mail" required>
+                </div>
+                <div class="form__field form__phone">
+                    <label class="form__label" for="form_telefone">*Telefone:</label>
+                    <input class="form__input" onkeypress="mask(this)" minlength="14" maxlength="15" name="phone"
+                        id="form_telefone" placeholder="(__) ____-____" type="text" required>
+                </div>
+                <div class="form__field form__message">
+                    <label class="form__label" for="form_message">*Mensagem:</label>
+                    <textarea class="form__input" name="message" id="form_message" placeholder="Escreva aqui"
+                        type="text" rows="5" required></textarea>
+                </div>
+                <div class="form__button">
+                    <button type="submit">ENVIAR</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Lorem Ipsum</p>
+    </footer>
+    <!-- End Footer -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
